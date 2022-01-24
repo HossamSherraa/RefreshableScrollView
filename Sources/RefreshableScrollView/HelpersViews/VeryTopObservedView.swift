@@ -8,7 +8,8 @@
 import SwiftUI
 struct VeryTopObservedView : View {
     var body: some View {
-        Text("I will Observer this view")
+        Color.clear
+            .frame(height: 3)
         
             .anchorPreference(key: VeryTopItemOnScrollViewPrefenreceKey.self, value: .center) { anchor in
                 [VeryTopItemOnScrollViewPrefenreceValue(anchor: anchor)]

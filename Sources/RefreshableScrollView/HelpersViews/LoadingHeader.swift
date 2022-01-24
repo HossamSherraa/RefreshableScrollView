@@ -15,6 +15,7 @@ struct LoadingHeader : View {
             .frame(height: isLoadingViewPresented ? Constants.progressViewHeight : 0)
             .opacity(isLoadingViewPresented ? 1 : 0 )
             .scaleEffect(getScaleValue())
+        
     }
     func getScaleValue()->CGFloat{
         print("call")

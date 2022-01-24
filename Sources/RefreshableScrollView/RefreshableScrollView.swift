@@ -23,6 +23,7 @@ public struct RefreshableScrollView<Content : View>: View {
             VStack{
                 ScrollView{
                     LoadingHeader(isLoadingViewPresented: isLoadingViewPresented, yPosition: currentYPos)
+                       
                     VeryTopObservedView()
                     scrollViewContent()
                 }
@@ -34,8 +35,7 @@ public struct RefreshableScrollView<Content : View>: View {
                 presentLoadingViewIfNeededWith(yPosition: yPosition)
             }
         }
-        .animation(.easeIn(duration: Constants.animationDuration), value: currentYPos)
-        .animation(.easeIn(duration: Constants.animationDuration) , value: isLoadingViewPresented)
+       
     }
     
     

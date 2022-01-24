@@ -7,7 +7,7 @@
 
 import SwiftUI
 struct Constants {
-    static var revereseScrollYOffset : CGFloat = 100
+    static var revereseScrollYOffset : CGFloat = 170
     static var progressViewStartScaleAt : CGFloat = 60
     static var progressViewMaxScale : CGFloat = 1.7
     static var progressViewMinScale : CGFloat = 1.2
