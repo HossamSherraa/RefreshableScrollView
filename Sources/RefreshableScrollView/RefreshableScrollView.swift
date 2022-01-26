@@ -71,7 +71,7 @@ struct ScrollListView_Previews: PreviewProvider {
             
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false) { _ in
                 
-                    isRefreshing.toggle()
+                isRefreshing.stop()
                 
             }
             

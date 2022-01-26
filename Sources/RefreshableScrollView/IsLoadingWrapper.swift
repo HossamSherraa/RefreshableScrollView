@@ -7,11 +7,17 @@
 
 import SwiftUI
 public protocol IsLoadingWrapperProtocol {
-    func toggle()
+    func stop()
+    func start()
 }
 struct IsLoadingWrapper : IsLoadingWrapperProtocol {
     let isLoading :  Binding<Bool>
-    func toggle() {
-        isLoading.wrappedValue.toggle()
+    func stop() {
+        print("syoo")
+        isLoading.wrappedValue = false
+    }
+    
+    func start() {
+        isLoading.wrappedValue = true 
     }
 }
